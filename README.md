@@ -26,10 +26,10 @@ $ go build -o tagent
 3. 使用 tagent
 
 ```shell script
-$ tagent help # 查看帮助
-$ tagent devices  # 输出当前 Mac 连接的 iPhone
-$ tagent connect  # 运行 iOS-Tagent 和 iproxy
-$ tagent disconnect # 停止运行 iOS-Tagent 和 iproxy
+$ ./tagent help # 查看帮助
+$ ./tagent devices  # 输出当前 Mac 连接的 iPhone
+$ ./tagent connect  # 运行 iOS-Tagent 和 iproxy
+$ ./tagent disconnect # 停止运行 iOS-Tagent 和 iproxy
 ```
 
 其他：
