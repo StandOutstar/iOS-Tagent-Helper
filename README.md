@@ -5,11 +5,11 @@
 通常你需要在两个终端窗口中分别运行 xcodebuild 和 iproxy，
 现在使用iOS-Tagent Helper，可以使用 tagent 一次启停 xcodebuild 和 iproxy。
 
-前置条件：
+## 前置条件
 - 了解 golang。
 - 已通过手工成功配置和运行过 iOS-Tagent。
 
-使用说明：
+## 使用说明
 
 1. 在 `~/.tagent.yaml` 中配置 iOS-Tagent 的路径
 
@@ -35,7 +35,7 @@ $ ./tagent connect  # 运行 iOS-Tagent 和 iproxy
 $ ./tagent disconnect # 停止运行 iOS-Tagent 和 iproxy
 ```
 
-其他：
+## 其他
 
 - `--config` 选项可以指定不同路径的配置文件。
 - 需要全局可运行，可以复制可执行文件到 `/usr/local/bin` 下，`sudo mv ./tagent /usr/local/bin/`
