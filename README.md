@@ -39,3 +39,4 @@ $ ./tagent disconnect # 停止运行 iOS-Tagent 和 iproxy
 
 - `--config` 选项可以指定不同路径的配置文件。
 - 需要全局可运行，可以复制可执行文件到 `/usr/local/bin` 下，`sudo mv ./tagent /usr/local/bin/`
+- 如果当前 Mac 连接有多个 iPhone，那么默认连接 devices 命令输出的第一个设备
