@@ -1,13 +1,13 @@
 # iOS-Tagent Helper
 
-此工具帮助更容易的管理运行 iOS-Tagent。
+此工具帮助更容易的管理运行 [iOS-Tagent](https://github.com/AirtestProject/iOS-Tagent) 。
 
 通常你需要在两个终端窗口中分别运行 xcodebuild 和 iproxy，
 现在使用iOS-Tagent Helper，可以使用 tagent 一次启停 xcodebuild 和 iproxy。
 
 ## 前置条件
 - 了解 golang。
-- 已通过手工成功配置和运行过 iOS-Tagent。
+- 已通过手工成功配置和运行过 iOS-Tagent 。
 
 ## 使用说明
 
