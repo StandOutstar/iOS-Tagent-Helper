@@ -22,6 +22,7 @@ import (
 	"log"
 	"os"
 	"os/exec"
+	"regexp"
 
 	"github.com/spf13/cobra"
 )
@@ -57,16 +58,19 @@ func init() {
 }
 
 func getDevices() (devices []string) {
-	out, err := exec.Command("idevice_id", "-l").Output()
+	out, err := exec.Command("cfgutil", "list").Output()
 	if err != nil {
 		log.Println(err)
 		fmt.Printf("%s\b", err)
 		os.Exit(1)
 	}
 
+	r, _ := regexp.Compile(`UDID:\s([0-9a-z]+)\s`)
 	scanner := bufio.NewScanner(bytes.NewReader(out))
 	for scanner.Scan() {
-		devices = append(devices, scanner.Text())
+		deviceText := scanner.Text()
+		deviceUDID := r.FindString(deviceText)
+		devices = append(devices, deviceUDID)
 	}
 	return
 }
